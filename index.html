@@ -1,0 +1,61 @@
+<html>
+
+<head>
+<title>
+	Sprint 1 - Kraken
+</title>
+<style type="text/css" media=screen>
+   p {font-family: georgia, serif; font-size: x-small;}
+   body {background-color : #99EE66 }
+   .content { background-color : white; min-height : 200px; padding: 10px 10px 10px 10px }
+</style>
+
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+
+function bindContentButton(id) {
+	$('.button' + id).click(function() {
+	$('.content').hide();
+	$('.content' + id).show();
+  });
+}
+$(document).ready(function() {
+  bindContentButton('1');
+  bindContentButton('2');
+  bindContentButton('3');
+  
+  $('.content1').show();
+});
+
+</script>
+</head>
+
+<body>
+	<h1>Collosal Kraken Club!</h1>
+	<div class="header">
+		<button class="button1">home</button>
+		<button class="button2">nav1</button>
+		<button class="button3">nav2</button>
+	
+	<div>
+	
+	<div class="content content1" style="display:none">
+		<center>
+			<img src='kraken_3.jpg' />
+		
+			<h2>Purpose</h2>
+		
+			<span>The Colossal Kraken Club is a fan site for the evangelization and popularization of the Kraken.  The Kraken are legendary sea monsters of giant proportions said to dwell off the coasts of Norway and Greenland.</span>
+		</center>
+	</div>
+	
+	
+	
+	<div class="content content2" style="display:none">This is the purpose</div>
+	
+	<div class="content content3" style="display:none">ggg</div>
+	
+	
+</body>
+
+</html>
